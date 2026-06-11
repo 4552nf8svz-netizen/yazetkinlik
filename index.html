@@ -257,13 +257,15 @@
         }
         .file-item {
             display: flex; flex-direction: column; align-items: center;
-            padding: 0 0 8px; border-radius: 7px; cursor: pointer;
-            text-align: center; border: 1px solid transparent;
-            transition: background 0.12s, border-color 0.12s;
+            padding: 0 0 8px; border-radius: 10px; cursor: pointer;
+            text-align: center; border: 1px solid #e0e8f0;
+            transition: background 0.12s, border-color 0.12s, box-shadow 0.12s;
             overflow: hidden;
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
         }
-        .file-item:hover { background: #d9ecff; border-color: #aad4f5; }
-        .file-item:active { background: #b8d9f5; }
+        .file-item:hover { background: #e8f3ff; border-color: #90c4f5; box-shadow: 0 4px 14px rgba(0,120,212,0.15); }
+        .file-item:active { background: #cce4ff; }
         .file-item-thumb {
             width: 100%; height: 64px;
             display: flex; align-items: center; justify-content: center;
